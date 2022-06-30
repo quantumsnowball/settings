@@ -1,0 +1,9 @@
+git:
+  paging:
+    colorArg: always
+    pager: diff-so-fancy
+  log:
+    showGraph: 'always'
+    showWholeGraph: true
+  branchLogCmd: 'git log --graph --all --color=always --abbrev-commit --decorate --date=relative --pretty=oneline {{branchName}} --'
+  allBranchesLogCmd: 'git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty=oneline'
