@@ -1,0 +1,44 @@
+#!/bin/sh
+
+case "$1" in
+    alacritty)
+        src=("$HOME/.config/.repo/alacritty/alacritty.yml")
+        dst=("$HOME/.config/alacritty/alacritty.yml")
+        ;;
+    aria2 | aria2c)
+        src=("$HOME/.config/.repo/aria2/aria2.conf")
+        dst=("$HOME/.aria2.conf")
+        ;;
+    code | vscode)
+        src=("$HOME/.config/.repo/Code/keybindings.json" \
+            "$HOME/.config/.repo/Code/settings.json" )
+        dst=("$HOME/.config/Code - OSS/User/keybindings.json" \
+            "$HOME/.config/Code - OSS/User/settings.json")
+        ;;
+    lazygit)
+        src=("$HOME/.config/.repo/lazygit/config.yml")
+        dst=("$HOME/.config/lazygit/config.yml")
+        ;;
+    pirate-get | pirateget)
+        src=("$HOME/.config/.repo/pirate-get/pirate-get")
+        dst=("$HOME/.config/pirate-get")
+        ;;
+    ptpython)
+        src=("$HOME/.config/.repo/ptpython/config.py")
+        dst=("$HOME/.config/ptpython/config.py")
+        ;;
+    ripgrep | rg)
+        src=("$HOME/.config/.repo/ripgrep/.rgignore")
+        dst=("$HOME/.rgignore")
+        ;;
+    *)
+        echo 'Make sure you enter the correct name to install'
+        exit 1
+        ;;
+
+esac
+
+for i in "${!dst[@]}"; do
+    ln -sf "${src[i]}" "${dst[i]}" && \
+    ls -l "${dst[i]}"
+done
