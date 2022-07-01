@@ -3,7 +3,7 @@
   "exclusionRules": [
     {
       "pattern": "https?://www.youtube.com/watch*",
-      "passKeys": "f,t,j,k,l,m,/,<,>"
+      "passKeys": "f,t,j,k,l,m,/,<,>,c"
     },
     {
       "pattern": "https?://music.youtube.com/*",
