@@ -1,40 +1,48 @@
-# .config
+# .config/.repo
 
-Clone this repo into ~/.config/.repo
+Quickly setup a new development linux machine. Most configs are stored in `.repo`, but some more advanced configs use their own repos.
 
-# Essential Softwares
+# Install essentials
 
 ```sh
-# git
-pacman -S git
+# Arch/Manjaro
+pacman -S \
+    git zsh neovim tmux base-devel openssh \
+    bat exa zoxide lazygit ripgrep fd gdu
+```
 
-# neovim
-pacman -S neovim
-git clone http://git
+# Install specials
 
-# tmux
-pacman -S tmux
-
-# oh-my-tmux
-git clone https://github.com/gpakosz/.tmux
-ln -s -f .tmux/.tmux.conf
-
-# compilers
-pacman -S base-devel
-
-# basic
-pacman -S zoxide
-pacman -S exa
-pacman -S ripgrep
-
-# search
-## fzf
+```sh
+# fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
-## fd
-pacman -S fd
 
-# analytic
-## gdu
-pacman -S gdu
+# pyenv
+curl https://pyenv.run | bash
+```
+
+# Clone user configs
+
+Clone `zshrc`, `nvim`, `tmux`, `.repo` into ~/.config.
+```sh
+mkdir -p ~/.config/ && cd ~/.config && \
+git clone https://github.com/quantumsnowball/zshrc && \
+git clone https://github.com/quantumsnowball/nvim && \
+git clone https://github.com/quantumsnowball/tmux && \
+git clone https://github.com/quantumsnowball/.repo
+```
+
+Run any installation scripts inside them.
+
+```sh
+cd ~/.config/.repo
+./install <name>
+```
+
+# Install optionals
+
+```sh
+# grip (preview markdown)
+pip install grip
 ```
