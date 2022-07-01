@@ -1,0 +1,9 @@
+#!/bin/sh
+
+src=("$REPO/lazygit/config.yml")
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    dst=("$CONFIG_MAC/lazygit/config.yml")
+else
+    dst=("$CONFIG/lazygit/config.yml")
+fi

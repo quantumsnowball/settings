@@ -1,0 +1,11 @@
+#!/bin/sh
+
+src=("$REPO/Code/keybindings.json" \
+    "$REPO/Code/settings.json" )
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    dst=("$CONFIG_MAC/Code/User/keybindings.json" \
+        "$CONFIG_MAC/Code/User/settings.json")
+else
+    dst=("$CONFIG/Code - OSS/User/keybindings.json" \
+        "$CONFIG/Code - OSS/User/settings.json")
+fi

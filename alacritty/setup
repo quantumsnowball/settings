@@ -1,0 +1,4 @@
+#!/bin/sh
+
+src=("$REPO/alacritty/alacritty.yml")
+dst=("$CONFIG/alacritty/alacritty.yml")

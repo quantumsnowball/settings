@@ -1,0 +1,8 @@
+#!/bin/sh
+
+src=("$REPO/ptpython/config.py")
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    dst=("$CONFIG_MAC/ptpython/config.yml")
+else
+    dst=("$CONFIG/ptpython/config.yml")
+fi

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+src=("$HOME/.config/.repo/aria2/aria2.conf")
+dst=("$HOME/.aria2.conf")

@@ -1,35 +1,30 @@
 #!/bin/sh
 
+REPO="$HOME/.config/.repo"
+CONFIG="$HOME/.config"
+CONFIG_MAC="$HOME/Library/Application Support"
+
 case "$1" in
     alacritty)
-        src=("$HOME/.config/.repo/alacritty/alacritty.yml")
-        dst=("$HOME/.config/alacritty/alacritty.yml")
+        source "$REPO/alacritty/setup"
         ;;
     aria2 | aria2c)
-        src=("$HOME/.config/.repo/aria2/aria2.conf")
-        dst=("$HOME/.aria2.conf")
+        source "$REPO/aria2/setup"
         ;;
     code | vscode)
-        src=("$HOME/.config/.repo/Code/keybindings.json" \
-            "$HOME/.config/.repo/Code/settings.json" )
-        dst=("$HOME/.config/Code - OSS/User/keybindings.json" \
-            "$HOME/.config/Code - OSS/User/settings.json")
+        source "$REPO/Code/setup"
         ;;
     lazygit)
-        src=("$HOME/.config/.repo/lazygit/config.yml")
-        dst=("$HOME/.config/lazygit/config.yml")
+        source "$REPO/lazygit/setup"
         ;;
     pirate-get | pirateget)
-        src=("$HOME/.config/.repo/pirate-get/pirate-get")
-        dst=("$HOME/.config/pirate-get")
+        source "$REPO/pirate-get/setup"
         ;;
     ptpython)
-        src=("$HOME/.config/.repo/ptpython/config.py")
-        dst=("$HOME/.config/ptpython/config.py")
+        source "$REPO/ptpython/setup"
         ;;
     ripgrep | rg)
-        src=("$HOME/.config/.repo/ripgrep/.rgignore")
-        dst=("$HOME/.rgignore")
+        source "$REPO/ripgrep/setup"
         ;;
     *)
         echo 'Make sure you enter the correct name to install'
@@ -39,6 +34,10 @@ case "$1" in
 esac
 
 for i in "${!dst[@]}"; do
-    ln -sf "${src[i]}" "${dst[i]}" && \
-    ls -l "${dst[i]}"
+    # create symlink
+    ln -sf "${src[i]}" "${dst[i]}"
+    # verify if link exists and is valid
+    if [ -L ${my_link} ] && [ -e ${my_link} ]; then
+        ls -l "${dst[i]}"
+    fi
 done
