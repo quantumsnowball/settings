@@ -34,6 +34,8 @@ case "$1" in
 esac
 
 for i in "${!dst[@]}"; do
+    # make parent directories
+    mkdir -p "$(dirname "${dst[i]}")"
     # create symlink
     ln -sf "${src[i]}" "${dst[i]}"
     # verify if link exists and is valid
