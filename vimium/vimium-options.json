@@ -13,7 +13,7 @@
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "# Insert your preferred key mappings here.\nunmap /\nmap g/ enterFindMode\nmap f LinkHints.activateModeToOpenInNewForegroundTab\nmap F LinkHints.activateMode\nmap gf LinkHints.activateModeWithQueue\nmap gp LinkHints.activateModeToOpenIncognito\nmap c< closeTabsOnLeft\nmap c> closeTabsOnRight\nmap co closeOtherTabs\nmap ca closeOtherTabs",
+  "keyMappings": "# Insert your preferred key mappings here.\nunmap /\nmap g/ enterFindMode\nmap f LinkHints.activateModeToOpenInNewForegroundTab\nmap F LinkHints.activateMode\nmap gf LinkHints.activateModeWithQueue\nmap gp LinkHints.activateModeToOpenIncognito\nmap c< closeTabsOnLeft\nmap c> closeTabsOnRight\nmap co closeOtherTabs\nmap ca closeOtherTabs\nmap <c-p> togglePinTab",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",
