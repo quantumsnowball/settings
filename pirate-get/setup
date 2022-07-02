@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 src=("$HOME/.config/.repo/pirate-get/pirate-get")
 dst=("$HOME/.config/pirate-get")

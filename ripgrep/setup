@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 src=("$REPO/ripgrep/.rgignore")
 dst=("$HOME/.rgignore")

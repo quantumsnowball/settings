@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 src=("$REPO/lazygit/config.yml")
 

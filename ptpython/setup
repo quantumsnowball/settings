@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 src=("$REPO/ptpython/config.py")
 if [[ "$OSTYPE" == "darwin"* ]]; then

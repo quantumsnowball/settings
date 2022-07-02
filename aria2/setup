@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 src=("$HOME/.config/.repo/aria2/aria2.conf")
 dst=("$HOME/.aria2/aria2.conf")
