@@ -26,6 +26,9 @@ case "$1" in
     ripgrep | rg)
         source "$REPO/ripgrep/setup"
         ;;
+    karabiner)
+        source "$REPO/karabiner/setup"
+        ;;
     *)
         echo 'Make sure you enter the correct name to install'
         exit 1

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+src=("$REPO/karabiner/complex_modifications")
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    dst=("$CONFIG/karabiner/assets/complex_modifications")
+fi
