@@ -6,6 +6,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     dst=("$CONFIG_MAC/Code/User/keybindings.json" \
         "$CONFIG_MAC/Code/User/settings.json")
 else
-    dst=("$CONFIG/Code - OSS/User/keybindings.json" \
-        "$CONFIG/Code - OSS/User/settings.json")
+    dst=("$CONFIG/Code/User/keybindings.json" \
+        "$CONFIG/Code/User/settings.json")
 fi
