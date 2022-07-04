@@ -10,5 +10,6 @@
     "editor.minimap.enabled": false,
     "workbench.list.automaticKeyboardNavigation": false,
     "editor.tabSize": 2,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/Code/User/init.vim"
 }

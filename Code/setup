@@ -1,11 +1,14 @@
 #!/bin/bash
 
 src=("$REPO/Code/keybindings.json" \
-    "$REPO/Code/settings.json" )
+    "$REPO/Code/settings.json" \
+    "$REPO/Code/init.vim" )
 if [[ "$OSTYPE" == "darwin"* ]]; then
     dst=("$CONFIG_MAC/Code/User/keybindings.json" \
-        "$CONFIG_MAC/Code/User/settings.json")
+        "$CONFIG_MAC/Code/User/settings.json" \
+        "$CONFIG_MAC/Code/User/init.vim")
 else
     dst=("$CONFIG/Code/User/keybindings.json" \
-        "$CONFIG/Code/User/settings.json")
+        "$CONFIG/Code/User/settings.json" \
+        "$CONFIG/Code/User/init.vim")
 fi
