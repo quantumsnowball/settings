@@ -153,15 +153,5 @@
     {
         "key": "ctrl+q",
         "command": "-workbench.action.quit"
-    },
-    {
-        "key": "g -",
-        "command": "workbench.action.splitEditorDown",
-        "when": "editorTextFocus && neovim.mode == 'normal'"
-    },
-    {
-        "key": "g \\",
-        "command": "workbench.action.splitEditorRight",
-        "when": "editorTextFocus && neovim.mode == 'normal'"
     }
 ]
