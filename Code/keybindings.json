@@ -153,5 +153,13 @@
     {
         "key": "ctrl+q",
         "command": "-workbench.action.quit"
+    },
+    {
+        "key": "g -",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "g \\",
+        "command": "workbench.action.splitEditorRight"
     }
 ]

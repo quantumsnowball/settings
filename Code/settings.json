@@ -9,5 +9,6 @@
     "workbench.colorTheme": "Monokai",
     "editor.minimap.enabled": false,
     "workbench.list.automaticKeyboardNavigation": false,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.inlineSuggest.enabled": true
 }
