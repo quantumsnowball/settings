@@ -5,6 +5,7 @@ site-packages/
 .npm/
 *[Cc]ache*/
 *[Ii]cons*/
+*yarn.lock*
 # full path
 /.fonts/
 /.pyenv/
