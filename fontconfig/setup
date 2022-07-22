@@ -1,0 +1,4 @@
+#!/bin/bash
+
+src=("$HOME/.config/.repo/fontconfig/fonts.conf")
+dst=("$HOME/.config/fontconfig/fonts.conf")

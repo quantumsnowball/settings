@@ -29,6 +29,9 @@ case "$1" in
     karabiner)
         source "$REPO/karabiner/setup"
         ;;
+    fontconfig)
+        source "$REPO/fontconfig/setup"
+        ;;
     *)
         echo 'Make sure you enter the correct name to install'
         exit 1
