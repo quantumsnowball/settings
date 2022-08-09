@@ -1,5 +1,5 @@
 {
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
     "keyboard.dispatch": "keyCode",
     "editor.fontFamily": "'Hurmit NF'",
