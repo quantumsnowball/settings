@@ -17,6 +17,9 @@ case "$1" in
     lazygit)
         source "$REPO/lazygit/setup"
         ;;
+    most)
+        source "$REPO/most/setup"
+        ;;
     pirate-get | pirateget)
         source "$REPO/pirate-get/setup"
         ;;

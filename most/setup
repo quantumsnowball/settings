@@ -1,0 +1,4 @@
+#!/bin/bash
+
+src=("$HOME/.config/.repo/most/mostrc")
+dst=("$HOME/.mostrc")
