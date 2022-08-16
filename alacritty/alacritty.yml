@@ -11,7 +11,7 @@ shell:
   program: /bin/zsh
   args:
     - -c
-    - "tmux new -n '' && exec zsh"
+    - "tmux attach -t 0 || tmux new -n 0 && exec zsh"
 colors:
   # Default colors
   primary:
