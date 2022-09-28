@@ -1,5 +1,5 @@
 #!/bin/bash
 
-chmod +x $HOME/.config/.repo/.scripts/*
-[ ! -d $HOME/.scripts ] && ln -s $HOME/.config/.repo/.scripts $HOME/.scripts
+chmod +x $HOME/.config/.repo/.scripts/src/*
+[ ! -d $HOME/.scripts ] && ln -s $HOME/.config/.repo/.scripts/src $HOME/.scripts
 ls -l $HOME/.scripts
