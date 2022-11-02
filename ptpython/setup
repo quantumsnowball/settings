@@ -2,7 +2,7 @@
 
 src=("$REPO/ptpython/config.py")
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    dst=("$CONFIG_MAC/ptpython/config.yml")
+    dst=("$CONFIG_MAC/ptpython/config.py")
 else
-    dst=("$CONFIG/ptpython/config.yml")
+    dst=("$CONFIG/ptpython/config.py")
 fi
