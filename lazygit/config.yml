@@ -1,5 +1,7 @@
 quitOnTopLevelReturn: true
 git:
+  merging:
+    args: "--no-ff"
   paging:
     colorArg: always
     pager: diff-so-fancy
