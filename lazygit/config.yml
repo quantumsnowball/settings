@@ -12,9 +12,10 @@ git:
   allBranchesLogCmd: 'git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty=oneline'
 customCommands:
   - key: 'F'
+    description: 'fast-forward selected branch up to current branch'
     command: 'git fetch . {{.CheckedOutBranch.Name}}:{{.SelectedLocalBranch.Name}}'
     context: 'localBranches'
     prompts:
       - type: 'confirm'
-        title: "Confirm:"
-        body: "Fast-forward `{{.SelectedLocalBranch.Name}}` up to `{{.CheckedOutBranch.Name}}`?"
+        title: 'Confirm:'
+        body: 'Fast-forward `{{.SelectedLocalBranch.Name}}` up to `{{.CheckedOutBranch.Name}}`?'
