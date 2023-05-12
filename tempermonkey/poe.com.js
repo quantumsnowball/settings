@@ -9,19 +9,23 @@
 (() => {
     'use strict';
 
-    setTimeout(() => {
-        // restore default context menu
+    const useMyHandler = () => {
         const disableContextMenu = () => {
+            // restore default context menu
             setTimeout(() => {
                 document.querySelectorAll('[class^=ChatMessage_messageRow]')
                     .forEach(row => row.addEventListener('contextmenu', e => e.stopPropagation()));
             }, 5000)
         };
+        // apply initially
         disableContextMenu();
+        // apply when changing bots
         document.querySelectorAll('a[class^=PageWithSidebarNavItem_newNavItem]').forEach(link => {
             link.addEventListener('click', disableContextMenu);
         });
+    };
 
+    const useMyStyle = () => {
         // Define the new CSS style you want to apply
         const newStyle = `
             /* font size */
@@ -71,6 +75,11 @@
         const styleElement = document.createElement('style');
         styleElement.innerText = newStyle;
         document.head.appendChild(styleElement);
+    }
 
+    // apply these custom config initially
+    setTimeout(() => {
+        useMyHandler();
+        useMyStyle();
     }, 1000);
 })();
