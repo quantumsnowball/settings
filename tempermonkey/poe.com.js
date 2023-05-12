@@ -28,6 +28,11 @@
     const useMyStyle = () => {
         // Define the new CSS style you want to apply
         const newStyle = `
+            /* allow text selection */
+            html {
+                user-select: text;
+            }
+
             /* font size */
             @media screen and (max-width: 800px) {
                 a[class^=PageWithSidebarNavItem_newNavItem] {
