@@ -11,8 +11,7 @@
 
     setTimeout(function() {
         // restore default context menu
-        document.querySelectorAll('[class^=ChatMessage_messageRow]')
-            .forEach(row => row.addEventListener('contextmenu', e => e.stopPropagation()));
+        document.querySelectorAll('[class^=ChatMessage_messageRow]').forEach(row => row.addEventListener('contextmenu', e => e.stopPropagation()));
         // Define the new CSS style you want to apply
         const newStyle = `
         /* font size */
@@ -25,15 +24,23 @@
         /* full width chat area */
         aside[class^=NewPageWithSidebarLayout_leftSidebar] {
             flex: 0;
+            min-width: unset;
+        }
+        div[class^=NewPageWithSidebarLayout_centeredPage] {
+            overflow-x: hidden;
+            max-width: unset;
+        }
+        section[class^=NewPageWithSidebarLayout_mainSectionWrapper] {
+            overflow-x: hidden;
         }
         div[class^=NewPageWithSidebarLayout_mainSection] {
             flex: 1 1 100%;
-            max-width: none;
+            max-width: unset;
         }
 
         /* full width message bubble */
         div[class^=Message_botMessageBubble] {
-            max-width: none;
+            max-width: unset;
             margin-right: 0;
         }
 
