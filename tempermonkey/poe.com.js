@@ -11,11 +11,16 @@
 
     setTimeout(function() {
         // restore default context menu
-        document.querySelectorAll('[class^=ChatMessage_messageRow]').forEach(row => row.addEventListener('contextmenu', e => e.stopPropagation()));
+        document.querySelectorAll('[class^=ChatMessage_messageRow]')
+            .forEach(row => row.addEventListener('contextmenu', e => e.stopPropagation()));
         // Define the new CSS style you want to apply
         const newStyle = `
         /* font size */
-        @media screen and (max-width: 684px) {
+        @media screen and (max-width: 800px) {
+            a[class^=PageWithSidebarNavItem_newNavItem] {
+                font-size: var(--font-size-small);
+                padding: var(--spacing-small);
+            }
             div[class^=Message_botMessageBubble], [class^=MarkdownCodeBlock_preTag] {
                 font-size: var(--font-size-small);
             }
