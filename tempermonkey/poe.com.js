@@ -13,7 +13,7 @@
         const disableContextMenu = () => {
             // restore default context menu
             setTimeout(() => {
-                document.querySelectorAll('[class^=ChatMessage_messageRow]').forEach(row => {
+                document.querySelectorAll('div[class^=ChatPageMain_container]').forEach(row => {
                     row.addEventListener('contextmenu', e => e.stopPropagation());
                     row.addEventListener('touchstart', e => e.stopPropagation());
                 });
