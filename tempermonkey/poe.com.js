@@ -17,7 +17,7 @@
                     row.addEventListener('contextmenu', e => e.stopPropagation());
                     row.addEventListener('touchstart', e => e.stopPropagation());
                 });
-            }, 5000)
+            }, 2000)
         };
         // apply initially
         disableContextMenu();
