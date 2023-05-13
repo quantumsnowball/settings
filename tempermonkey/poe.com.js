@@ -41,7 +41,9 @@
                     font-size: var(--font-size-small);
                     padding: var(--spacing-small);
                 }
-                div[class^=Message_botMessageBubble], [class^=MarkdownCodeBlock_preTag] {
+            }
+            @media screen and (max-width: 684px) {
+                div[class^=Message_humanMessageBubble], div[class^=Message_botMessageBubble], [class^=MarkdownCodeBlock_preTag] {
                     font-size: var(--font-size-small);
                 }
             }
