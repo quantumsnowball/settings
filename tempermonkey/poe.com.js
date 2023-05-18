@@ -37,7 +37,7 @@
 
             /* font size */
             @media screen and (max-width: 800px) {
-                a[class^=PageWithSidebarNavItem_newNavItem] {
+                a[class^=PageWithSidebarNavItem_navItem] {
                     font-size: var(--font-size-small);
                     padding: var(--spacing-small);
                 }
@@ -49,18 +49,20 @@
             }
 
             /* full width chat area */
-            aside[class^=NewPageWithSidebarLayout_leftSidebar] {
+            aside[class^=PageWithSidebarLayout_leftSidebar] {
                 flex: 0;
                 min-width: unset;
             }
-            div[class^=NewPageWithSidebarLayout_centeredPage] {
-                overflow-x: hidden;
+            div[class^=PageWithSidebarLayout_centeredPage] {
                 max-width: unset;
             }
-            section[class^=NewPageWithSidebarLayout_mainSectionWrapper] {
+            div[class^=PageWithSidebarLayout_mainSection] {
+                max-width: unset;
+            }
+            section[class^=PageWithSidebarLayout_mainSectionWrapper] {
                 overflow-x: hidden;
             }
-            div[class^=NewPageWithSidebarLayout_mainSection] {
+            div[class^=PageWithSidebarLayout_mainSection] {
                 flex: 1 1 100%;
                 max-width: unset;
             }
