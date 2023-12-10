@@ -1,6 +1,6 @@
-# .config/.repo
+# .config/settings
 
-Quickly setup a new development linux machine. Most configs are stored in `.repo`, but some more advanced configs use their own repos.
+Quickly setup a new development linux machine. Most configs are stored in `settings`, but some more advanced configs use their own repos.
 
 # Install essentials
 
@@ -37,19 +37,19 @@ curl https://pyenv.run | bash
 
 # Clone user configs
 
-Clone `zshrc`, `nvim`, `tmux`, `.repo` into ~/.config.
+Clone `zshrc`, `nvim`, `tmux`, `settings` into ~/.config.
 ```sh
 mkdir -p ~/.config/ && cd ~/.config && \
 git clone https://github.com/quantumsnowball/zshrc && \
 git clone https://github.com/quantumsnowball/nvim && \
 git clone https://github.com/quantumsnowball/tmux && \
-git clone https://github.com/quantumsnowball/.repo
+git clone https://github.com/quantumsnowball/settings
 ```
 
 Run any installation scripts inside them.
 
 ```sh
-cd ~/.config/.repo
+cd ~/.config/settings
 ./install <name>
 ```
 

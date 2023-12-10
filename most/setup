@@ -1,4 +1,4 @@
 #!/bin/bash
 
-src=("$HOME/.config/.repo/most/mostrc")
+src=("$HOME/.config/settings/most/mostrc")
 dst=("$HOME/.mostrc")

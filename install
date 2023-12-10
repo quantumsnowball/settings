@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO="$HOME/.config/.repo"
+REPO="$HOME/.config/settings"
 CONFIG="$HOME/.config"
 CONFIG_MAC="$HOME/Library/Application Support"
 
