@@ -5,6 +5,9 @@ CONFIG="$HOME/.config"
 CONFIG_MAC="$HOME/Library/Application Support"
 
 case "$1" in
+    conda)
+        source "$REPO/conda/setup"
+        ;;
     alacritty)
         source "$REPO/alacritty/setup"
         ;;

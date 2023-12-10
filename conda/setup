@@ -1,0 +1,4 @@
+#!/bin/bash
+
+src=("$HOME/.config/settings/conda/env_vars.sh")
+dst=("$CONDA_PREFIX/etc/conda/activate.d/env_vars.sh")
