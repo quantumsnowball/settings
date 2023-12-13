@@ -54,6 +54,9 @@ map a :push %mkdir<space>
 # define a custom 'rename' command without prompt for overwrite
 # cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
 # map r push :rename<space>
+map r :rename; cmd-delete-home
+map RR :rename; cmd-end
+map Rr :rename; cmd-end; cmd-delete-home
 
 # make sure trash folder exists
 # %mkdir -p ~/.trash
