@@ -10,9 +10,6 @@ cmd downdir :{{
 }}
 map l downdir
 
-# unmap f
-map f
-
 # fzf_jump
 cmd fzf_jump ${{
     res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
@@ -26,7 +23,7 @@ cmd fzf_jump ${{
         lf -remote "send $id $cmd \"$res\""
     fi
 }}
-map ff :fzf_jump
+map f :fzf_jump
 
 #
 cmd fzf_search ${{
@@ -39,4 +36,4 @@ cmd fzf_search ${{
     )"
     [ -n "$res" ] && lf -remote "send $id select \"$res\""
 }}
-map fw :fzf_search
+map w :fzf_search
