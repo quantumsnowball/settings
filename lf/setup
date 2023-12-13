@@ -1,0 +1,5 @@
+#!/bin/bash
+
+src=("$HOME/.config/settings/lf/lfrc")
+dst=("$HOME/.config/lf/lfrc")
+

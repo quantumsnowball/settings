@@ -23,6 +23,9 @@ case "$1" in
     most)
         source "$REPO/most/setup"
         ;;
+    lf)
+        source "$REPO/lf/setup"
+        ;;
     pirate-get | pirateget)
         source "$REPO/pirate-get/setup"
         ;;
