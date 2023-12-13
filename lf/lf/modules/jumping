@@ -3,3 +3,10 @@ set incsearch
 
 # go home
 map ~ cd ~
+
+# l only go down dir
+cmd downdir :{{
+    %[ -d "$f" ] && lf -remote "send $id open"
+}}
+map l downdir
+
