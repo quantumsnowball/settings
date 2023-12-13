@@ -1,16 +1,11 @@
 # interpreter for shell commands
 set shell sh
-# icons
-set icons
 
-set info size
-set dircounts
+source "~/.config/lf/modules/info"
+source "~/.config/lf/modules/layout"
+source "~/.config/lf/modules/jumping"
 
-set incsearch
 
-map H set hidden!
-
-map ~ cd ~
 
 map i $bat --paging=always $f
 

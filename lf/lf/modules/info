@@ -1,0 +1,9 @@
+# icons
+set icons
+
+# infos
+set info size
+set dircounts
+
+# toggle hidden
+map H set hidden!

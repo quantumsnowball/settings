@@ -1,0 +1,5 @@
+# search then jump
+set incsearch
+
+# go home
+map ~ cd ~
