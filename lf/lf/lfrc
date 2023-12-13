@@ -62,7 +62,7 @@ map l downdir
 map A :push %mkdir<space>
 
 # touch
-map a :push %touch: <space>
+map a :push %touch<space>
 
 # define a custom 'rename' command without prompt for overwrite
 # cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
