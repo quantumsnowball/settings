@@ -38,8 +38,8 @@ map x $$f
 map X !$f
 
 # dedicated keys for file opener actions
-map o &mimeopen $f
-map O $mimeopen --ask $f
+# map o &mimeopen $f
+# map O $mimeopen --ask $f
 
 # define a custom 'open' command
 # This command is called when current file is not a directory. You may want to
@@ -51,6 +51,12 @@ cmd open &{{
         *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
+map <enter> open
+
+cmd downdir :{{
+    %[ -d "$f" ] && lf -remote "send $id open"
+}}
+map l downdir
 
 # mkdir command. See wiki if you want it to select created dir
 map A :push %mkdir<space>
