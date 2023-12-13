@@ -24,7 +24,8 @@ set scrolloff 10
 set cursorpreviewfmt "\033[7;2m"
 
 # use enter for shell commands
-map <enter> shell
+# map <enter> shell
+map ; shell
 
 # show the result of execution of previous commands
 map ` !true
@@ -49,7 +50,10 @@ cmd open &{{
 }}
 
 # mkdir command. See wiki if you want it to select created dir
-map a :push %mkdir<space>
+map A :push %mkdir<space>
+
+# touch
+map a :push %touch: <space>
 
 # define a custom 'rename' command without prompt for overwrite
 # cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
