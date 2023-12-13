@@ -1,5 +1,7 @@
-# infos
+# show file size
 set info size
+
+# show dir counts
 set dircounts
 
 # toggle hidden
