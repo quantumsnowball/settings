@@ -17,3 +17,6 @@ set shellopts '-eu'
 # commands accordingly.
 set ifs "\n"
 
+
+# escape key to quit
+map <esc> quit
