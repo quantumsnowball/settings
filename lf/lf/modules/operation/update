@@ -10,5 +10,6 @@ map Rr :rename; cmd-end; cmd-delete-home
 # map <enter> shell
 map ; shell
 
-
+# v at current dir of lf
+map v $nvim
 
