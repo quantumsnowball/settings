@@ -41,6 +41,9 @@ case "$1" in
     fontconfig)
         source "$REPO/fontconfig/setup"
         ;;
+    termux)
+        source "$REPO/termux/setup"
+        ;;
     *)
         echo 'Make sure you enter the correct name to install'
         exit 1

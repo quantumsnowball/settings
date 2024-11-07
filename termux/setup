@@ -1,0 +1,4 @@
+#!/bin/bash
+
+src=("$REPO/termux/termux.properties")
+dst=("$HOME/.termux/termux.properties")
