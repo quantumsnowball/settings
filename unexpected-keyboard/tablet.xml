@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<keyboard name="qwerty-hello" script="latin" bottom_row="false">
-  <row height="0.75">
-    <key c="`" se="~" width='0.7' />
-    <key c="1" se="!"/>
+<keyboard name="tablet" script="latin" bottom_row="false">
+  <row>
+    <key c="1" se="!" sw="`" nw="~" />
     <key c="2" se="@"/>
     <key c="3" se="#"/>
     <key c="4" se="$"/>
@@ -10,51 +9,72 @@
     <key c="6" sw="^"/>
     <key c="7" sw="&amp;"/>
     <key c="8" sw="*"/>
-    <key c="9" sw="("/>
-    <key c="0" sw=")"/>
+    <key c="9" sw="(" se="-" ne="_"/>
+    <key c="0" sw=")" se="=" ne="+"/>
   </row>
   <row>
-    <key c="tab" />
     <key c="q" />
     <key c="w" />
     <key c="e" />
-    <key c="r" />
+    <key c="r" se="redo" />
     <key c="t" />
-    <key c="y" />
-    <key c="u" />
-    <key c="i" />
-    <key c="o" />
-    <key c="p" />
+    <key c="y" sw="copy" />
+    <key c="u" sw="undo" />
+    <key c="i" se="[" ne="{" />
+    <key c="o" se="]" ne="}" />
+    <key c="p" se="\\" ne="|" sw="pasteAsPlainText" />
   </row>
   <row>
-    <key c="esc" width="1.5" />
-    <key c="a" />
+    <key c="a" se="selectAll" shift="0.5" />
     <key c="s" />
     <key c="d" />
     <key c="f" />
     <key c="g" />
     <key c="h" />
     <key c="j" />
-    <key c="k" />
-    <key c="l" />
-    <key c=";" sw=":" />
+    <key c="k" se=";" ne=":" />
+    <key c="l" se="'" ne="&quot;" />
   </row>
   <row>
-    <key c="shift" width="1.5" />
-    <key c="z"/>
-    <key c="x" />
-    <key c="c" />
-    <key c="v" />
-    <key c="b" />
-    <key c="n" />
-    <key c="m" />
-    <key c="backspace" width="1.5" />
+    <key c="esc" n="shift" e="tab" width="1.5" />
+    <key c="z" s="switch_clipboard" />
+    <key c="x" s="cut" />
+    <key c="c" s="copy" />
+    <key c="v" s="paste" />
+    <key c="b" se="," ne="&lt;" />
+    <key c="n" se="." ne="&gt;" />
+    <key c="m" se="/" ne="\?" />
+    <key c="backspace" n="shift" s="delete" width="1.5" />
   </row>
   <row height="0.95">
-    <key c="fn" width="1.1" />
-    <key c="ctrl" width="1.7" />
-    <key c="space" width="5.4" />
-    <key c="." width="1.1" />
-    <key c="enter" width="1.7" />
+    <key c="fn" 
+      n="config"
+      s="switch_forward"
+      width="1.1" 
+    />
+    <key c="ctrl" 
+      w="alt"
+      e="tab"
+      width="1.7" 
+    />
+    <key c="space" 
+      n="up"
+      s="down"
+      e="right"
+      w="left"
+      width="4.4" 
+    />
+    <key c="." 
+      n="page_up"
+      s="page_down"
+      e="end"
+      w="home"
+      width="1.1" 
+    />
+    <key c="enter" 
+      n="ctrl"
+      width="1.7" 
+    />
   </row>
 </keyboard>
+
