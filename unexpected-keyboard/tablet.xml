@@ -25,7 +25,8 @@
     <key c="p" se="\\" ne="|" sw="pasteAsPlainText" />
   </row>
   <row>
-    <key c="a" se="selectAll" shift="0.5" />
+    <key c="tab" width="0.5"/>
+    <key c="a" se="selectAll" />
     <key c="s" />
     <key c="d" />
     <key c="f" />
@@ -34,6 +35,7 @@
     <key c="j" />
     <key c="k" se=";" ne=":" />
     <key c="l" se="'" ne="&quot;" />
+    <key c="delete" width="0.5"/>
   </row>
   <row>
     <key c="esc" n="shift" e="tab" width="1.5" />
