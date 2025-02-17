@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="qwerty-hello" script="latin" bottom_row="false">
-  <row height="0.75">
+  <row>
     <key c="1" se="!" sw="`" nw="~" />
     <key c="2" se="@"/>
     <key c="3" se="#"/>
@@ -20,39 +20,39 @@
     <key c="t" />
     <key c="y" />
     <key c="u" />
-    <key c="i" />
-    <key c="o" />
-    <key c="p" />
+    <key c="i" se="[" ne="{" />
+    <key c="o" se="]" ne="}" />
+    <key c="p" se="\\" ne="|" />
   </row>
   <row>
-    <key c="tab" width="0.5" />
-    <key c="a" />
+    <key c="a" shift="0.5" />
     <key c="s" />
     <key c="d" />
     <key c="f" />
     <key c="g" />
     <key c="h" />
     <key c="j" />
-    <key c="k" />
-    <key c="l" />
-    <key c=";" n=":" width="0.5" />
+    <key c="k" se=";" ne=":" />
+    <key c="l" se="'" ne="&quot;" />
   </row>
   <row>
-    <key c="esc" n="shift" width="1.5" />
+    <key c="esc" n="shift" e="tab" width="1.5" />
     <key c="z"/>
     <key c="x" />
     <key c="c" />
     <key c="v" />
-    <key c="b" />
-    <key c="n" />
-    <key c="m" />
-    <key c="backspace" n="shift" width="1.5" />
+    <key c="b" se="," ne="&lt;" />
+    <key c="n" se="." ne="&gt;" />
+    <key c="m" se="/" ne="\?" />
+    <key c="backspace" n="shift" e="delete" width="1.5" />
   </row>
   <row height="0.95">
     <key c="fn" width="1.1" />
     <key c="ctrl" width="1.7" />
-    <key c="space" width="4.4" 
+    <key c="space" 
       n="switch_forward"
+      w="cursor_left" e="cursor_right"
+      width="4.4" 
     />
     <key c="." width="1.1" />
     <key c="enter" width="1.7" />
