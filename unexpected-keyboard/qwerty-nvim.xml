@@ -7,9 +7,9 @@ symbols.
 symbols to the corners of a key, they are arranged following the cardinal
 directions:
 
-   nw   n   ne
-   w    c    e
-   sw   s   se
+   nw   n   ne   |  1 7 2
+   w    c    e   |  5 0 6
+   sw   s   se   |  3 8 4
 
 Symbols prefixed with 'loc ' are not visible on the keyboard. They are used to
 specify a place for a key, if it needed to be added to the layout later.
