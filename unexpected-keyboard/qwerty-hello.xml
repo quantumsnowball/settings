@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="qwerty-hello" script="latin" bottom_row="false">
   <row height="0.75">
+    <key c="`" se="~" width='0.7' />
     <key c="1" se="!"/>
     <key c="2" se="@"/>
     <key c="3" se="#"/>
@@ -13,6 +14,7 @@
     <key c="0" sw=")"/>
   </row>
   <row>
+    <key c="tab" />
     <key c="q" />
     <key c="w" />
     <key c="e" />
@@ -25,7 +27,8 @@
     <key c="p" />
   </row>
   <row>
-    <key c="a" shift="0.5" />
+    <key c="esc" width="1.5" />
+    <key c="a" />
     <key c="s" />
     <key c="d" />
     <key c="f" />
