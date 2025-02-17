@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<keyboard name="qwerty-hello" script="latin" bottom_row="false">
+<keyboard name="phone" script="latin" bottom_row="false">
   <row>
     <key c="1" se="!" sw="`" nw="~" />
     <key c="2" se="@"/>
@@ -13,19 +13,19 @@
     <key c="0" sw=")" se="=" ne="+"/>
   </row>
   <row>
-    <key c="q" />
+    <key c="q" e="tab"/>
     <key c="w" />
     <key c="e" />
-    <key c="r" />
+    <key c="r" se="redo" />
     <key c="t" />
-    <key c="y" />
-    <key c="u" />
+    <key c="y" sw="copy" />
+    <key c="u" sw="undo" />
     <key c="i" se="[" ne="{" />
     <key c="o" se="]" ne="}" />
-    <key c="p" se="\\" ne="|" />
+    <key c="p" se="\\" ne="|" sw="pasteAsPlainText" />
   </row>
   <row>
-    <key c="a" shift="0.5" />
+    <key c="a" se="selectAll" shift="0.5" />
     <key c="s" />
     <key c="d" />
     <key c="f" />
@@ -36,19 +36,25 @@
     <key c="l" se="'" ne="&quot;" />
   </row>
   <row>
-    <key c="esc" n="shift" e="tab" width="1.5" />
-    <key c="z"/>
-    <key c="x" />
-    <key c="c" />
-    <key c="v" />
+    <key c="esc" n="shift" width="1.5" />
+    <key c="z" s="switch_clipboard" />
+    <key c="x" s="cut" />
+    <key c="c" s="copy" />
+    <key c="v" s="paste" />
     <key c="b" se="," ne="&lt;" />
     <key c="n" se="." ne="&gt;" />
     <key c="m" se="/" ne="\?" />
     <key c="backspace" n="shift" e="delete" width="1.5" />
   </row>
   <row height="0.95">
-    <key c="fn" width="1.1" />
-    <key c="ctrl" width="1.7" />
+  <key c="fn" 
+    n="config"
+    width="1.1" 
+  />
+    <key c="ctrl" 
+      n="alt"
+      width="1.7" 
+    />
     <key c="space" 
       n="switch_forward"
       w="cursor_left" e="cursor_right"
