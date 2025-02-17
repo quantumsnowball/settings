@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard name="tablet-full" script="latin" bottom_row="false">
   <row>
-    <key c="tab" sw="`" nw="~"/>
+    <key c="tab" sw="`" nw="~" width="0.9" />
     <key c="q" n="1" nw="!" />
     <key c="w" n="2" nw="@" />
     <key c="e" n="3" nw="#" />
     <key c="r" n="4" nw="$" se="redo" />
     <key c="t" n="5" nw="%" />
-    <key c="y" n="6" sw="copy" />
-    <key c="u" n="7" sw="undo" />
-    <key c="i" n="8" se="[" ne="{" />
-    <key c="o" n="9" se="]" ne="}" />
-    <key c="p" n="0" se="\\" ne="|" sw="pasteAsPlainText" />
-    <key c="backspace" />
+    <key c="y" n="6" ne="^" sw="copy" />
+    <key c="u" n="7" ne="&amp;" sw="undo" />
+    <key c="i" n="8" ne="*" />
+    <key c="o" n="9" ne="(" />
+    <key c="p" n="0" ne=")" sw="pasteAsPlainText" />
+    <key c="-" s="_" n="+" w="=" e="|"  width="1.1" />
   </row>
   <row>
-    <key c="esc" />
+    <key c="esc" width="1.0" />
     <key c="a" se="selectAll" />
     <key c="s" />
     <key c="d" />
@@ -25,11 +25,11 @@
     <key c="j" />
     <key c="k" />
     <key c="l" />
-    <key c=";" sw=":" />
-    <key c="'" sw="&quot;" />
+    <key c=";" sw=":" se="'" ne="&quot;" />
+    <key c="\\" sw="[" se="]" nw="{" ne="}" width="1.0" />
   </row>
   <row>
-    <key c="shift" />
+    <key c="shift" width="1.1" />
     <key c="z" s="switch_clipboard" />
     <key c="x" s="cut" />
     <key c="c" s="copy" />
@@ -40,7 +40,13 @@
     <key c="," sw="&lt;"/>
     <key c="." sw="&gt;"/>
     <key c="/" sw="\?"  />
-    <key />
+    <key c="shift"
+      n="page_up"
+      s="page_down"
+      e="end"
+      w="home"
+      width="0.9" 
+    />
   </row>
   <row height="0.95">
     <key c="fn" 
@@ -50,7 +56,6 @@
     />
     <key c="ctrl" 
       w="alt"
-      e="tab"
       width="1.7" 
     />
     <key c="space" 
@@ -60,16 +65,12 @@
       w="left"
       width="6.4" 
     />
-    <key c="." 
-      n="page_up"
-      s="page_down"
-      e="end"
-      w="home"
-      width="1.1" 
+    <key c="backspace" 
+      e="delete"
+      width="1.4" 
     />
     <key c="enter" 
-      n="ctrl"
-      width="1.7" 
+      width="1.4" 
     />
   </row>
 </keyboard>
