@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<keyboard name="tablet-full" script="latin" bottom_row="false">
+<keyboard name="s7-landscape-full" script="latin" bottom_row="false">
   <row>
     <key c="tab" sw="`" nw="~" width="0.9" />
     <key c="q" n="1" nw="!" />
