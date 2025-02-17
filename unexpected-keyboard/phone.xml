@@ -13,7 +13,7 @@
     <key c="0" sw=")" se="=" ne="+"/>
   </row>
   <row>
-    <key c="q" e="tab"/>
+    <key c="q" />
     <key c="w" />
     <key c="e" />
     <key c="r" se="redo" />
@@ -36,7 +36,7 @@
     <key c="l" se="'" ne="&quot;" />
   </row>
   <row>
-    <key c="esc" n="shift" width="1.5" />
+    <key c="esc" n="shift" e="tab" width="1.5" />
     <key c="z" s="switch_clipboard" />
     <key c="x" s="cut" />
     <key c="c" s="copy" />
@@ -44,23 +44,36 @@
     <key c="b" se="," ne="&lt;" />
     <key c="n" se="." ne="&gt;" />
     <key c="m" se="/" ne="\?" />
-    <key c="backspace" n="shift" e="delete" width="1.5" />
+    <key c="backspace" n="shift" s="delete" width="1.5" />
   </row>
   <row height="0.95">
-  <key c="fn" 
-    n="config"
-    width="1.1" 
-  />
+    <key c="fn" 
+      n="config"
+      s="switch_forward"
+      width="1.1" 
+    />
     <key c="ctrl" 
-      n="alt"
+      w="alt"
+      e="tab"
       width="1.7" 
     />
     <key c="space" 
-      n="switch_forward"
-      w="cursor_left" e="cursor_right"
+      n="up"
+      s="down"
+      e="right"
+      w="left"
       width="4.4" 
     />
-    <key c="." width="1.1" />
-    <key c="enter" width="1.7" />
+    <key c="." 
+      n="page_up"
+      s="page_down"
+      e="end"
+      w="home"
+      width="1.1" 
+    />
+    <key c="enter" 
+      n="ctrl"
+      width="1.7" 
+    />
   </row>
 </keyboard>
