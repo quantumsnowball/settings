@@ -16,21 +16,21 @@
     <key c="q" />
     <key c="w" />
     <key c="e" />
-    <key c="r" se="redo" />
-    <key c="t" />
-    <key c="y" sw="copy" />
-    <key c="u" sw="undo" />
+    <key c="r" s="redo" />
+    <key c="t" s="paste" />
+    <key c="y" s="copy" />
+    <key c="u" s="undo" />
     <key c="i" se="[" ne="{" />
     <key c="o" se="]" ne="}" />
-    <key c="p" se="\\" ne="|" sw="pasteAsPlainText" />
+    <key c="p" se="\\" ne="|" s="pasteAsPlainText" />
   </row>
   <row>
     <key c="tab" width="0.5"/>
-    <key c="a" se="selectAll" />
+    <key c="a" s="selectAll" />
     <key c="s" />
     <key c="d" />
     <key c="f" />
-    <key c="g" />
+    <key c="g" s="selectAll" />
     <key c="h" />
     <key c="j" />
     <key c="k" se=";" ne=":" />
