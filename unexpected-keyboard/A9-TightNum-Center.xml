@@ -28,10 +28,10 @@
     <key c="tab" width="0.5"/>
     <key c="a" s="selectAll" />
     <key c="s" />
-    <key c="d" />
+    <key c="d" e="tab" />
     <key c="f" />
     <key c="g" s="selectAll" />
-    <key c="h" />
+    <key c="h" e="tab" />
     <key c="j" />
     <key c="k" se=";" ne=":" />
     <key c="l" se="'" ne="&quot;" />
