@@ -55,6 +55,7 @@
     <key c="ctrl" 
       w="alt"
       e="tab"
+      n="enter"
       width="1.7" 
     />
     <key c="space" 
