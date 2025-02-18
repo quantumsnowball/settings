@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<keyboard name="Trad-Split7S-S7" script="latin" bottom_row="false">
+<keyboard name="S7-Trad-Split7S" script="latin" bottom_row="false">
   <row>
     <key c="tab" sw="`" nw="~" width="0.9" />
     <key c="q" n="1" nw="!" />

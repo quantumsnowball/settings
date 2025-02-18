@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<keyboard name="Trad-Split7S-A9" script="latin" bottom_row="false">
+<keyboard name="S7-Trad-Split12S" script="latin" bottom_row="false">
   <row>
     <key c="tab" sw="`" nw="~" width="0.9" />
     <key c="q" n="1" nw="!" />
@@ -7,17 +7,25 @@
     <key c="e" n="3" nw="#" />
     <key c="r" n="4" nw="$" se="redo" />
     <key c="t" n="5" nw="%" />
+    <key c="tab"
+      width="2.0"
+    />
     <key c="fn" 
       n="config"
       s="switch_forward"
-      width="1.5"
+      width="1.0"
     />
     <key c="pasteAsPlainText" />
-    <key c="paste" />
-    <key c="copy" />
+    <key c="paste" 
+      width="2.0"
+    />
+    <key c="copy" 
+      width="2.0"
+    />
+    <key c="cut" />
     <key c="backspace" 
       e="delete"
-      width="2.5" 
+      width="3.0" 
     />
     <key c="y" n="6" ne="^" sw="copy" />
     <key c="u" n="7" ne="&amp;" sw="undo" />
@@ -35,13 +43,13 @@
     <key c="g" />
     <key c="ctrl" 
       w="alt"
-      width="2.5" 
+      width="4.0" 
     />
     <key c="selectAll" 
-      width="2.0" 
+      width="4.0" 
     />
     <key c="enter" 
-      width="2.5" 
+      width="4.0" 
     />
     <key c="h" />
     <key c="j" />
@@ -61,7 +69,7 @@
       s="down"
       e="right"
       w="left"
-      width="7.0" 
+      width="12.0" 
     />
     <key c="b" />
     <key c="n"  />
@@ -77,4 +85,5 @@
     />
   </row>
 </keyboard>
+
 
