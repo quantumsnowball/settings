@@ -15,9 +15,10 @@
     <key c="pasteAsPlainText" />
     <key c="paste" />
     <key c="copy" />
+    <key c="cut" />
     <key c="backspace" 
       e="delete"
-      width="2.5" 
+      width="1.5" 
     />
     <key c="y" n="6" ne="^" sw="copy" />
     <key c="u" n="7" ne="&amp;" sw="undo" />
