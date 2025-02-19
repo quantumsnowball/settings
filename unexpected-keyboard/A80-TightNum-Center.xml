@@ -3,12 +3,12 @@
   <row>
     <key c="1" se="!" sw="`" nw="~" />
     <key c="2" se="@"/>
-    <key c="3" se="#"/>
+    <key c="3" se="#" s="enter"/>
     <key c="4" se="$"/>
-    <key c="5" se="%"/>
-    <key c="6" sw="^"/>
+    <key c="5" se="%" s="switch_forward"/>
+    <key c="6" sw="^" s="config"/>
     <key c="7" sw="&amp;"/>
-    <key c="8" sw="*"/>
+    <key c="8" sw="*" s="enter"/>
     <key c="9" sw="(" se="-" ne="_"/>
     <key c="0" sw=")" se="=" ne="+"/>
   </row>
@@ -25,15 +25,15 @@
     <key c="p" se="\\" ne="|" s="pasteAsPlainText" />
   </row>
   <row>
-    <key c="a" s="selectAll" shift="0.5" />
+    <key c="a" s="selectAll" e="tab" shift="0.5" />
     <key c="s" />
-    <key c="d" e="tab" />
-    <key c="f" />
+    <key c="d" />
+    <key c="f" w="backspace"/>
     <key c="g" s="selectAll"/>
     <key c="h" e="tab" />
     <key c="j" />
     <key c="k" se=";" ne=":" />
-    <key c="l" se="'" ne="&quot;" />
+    <key c="l" se="'" ne="&quot;" w="backspace"/>
   </row>
   <row>
     <key c="esc" n="shift" e="tab" width="1.5" />
@@ -48,8 +48,6 @@
   </row>
   <row height="0.95">
     <key c="fn" 
-      n="config"
-      s="switch_forward"
       width="1.1" 
     />
     <key c="ctrl" 
