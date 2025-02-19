@@ -3,36 +3,36 @@
   <row>
     <key c="1" se="!" sw="`" nw="~" />
     <key c="2" se="@"/>
-    <key c="3" se="#"/>
+    <key c="3" se="#" s="enter"/>
     <key c="4" se="$"/>
     <key c="5" se="%"/>
     <key c="6" sw="^"/>
     <key c="7" sw="&amp;"/>
-    <key c="8" sw="*"/>
+    <key c="8" sw="*" s="enter"/>
     <key c="9" sw="(" se="-" ne="_"/>
     <key c="0" sw=")" se="=" ne="+"/>
   </row>
   <row>
     <key c="q" />
-    <key c="w" s="enter" />
+    <key c="w" e="tab" />
     <key c="e" />
-    <key c="r" s="redo" />
+    <key c="r" s="redo" w="backspace" />
     <key c="t" s="paste" />
     <key c="y" s="copy" />
-    <key c="u" s="undo" />
+    <key c="u" s="undo" e="tab" />
     <key c="i" se="[" ne="{" />
-    <key c="o" se="]" ne="}" s="enter" />
+    <key c="o" se="]" ne="}" w="backspace"/>
     <key c="p" se="\\" ne="|" s="pasteAsPlainText" />
   </row>
   <row>
     <key c="tab" width="0.5"/>
     <key c="a" s="selectAll" />
     <key c="s" />
-    <key c="d" w="tab" />
+    <key c="d" />
     <key c="f" />
     <key c="g" s="selectAll" />
     <key c="h" />
-    <key c="j" e="tab" />
+    <key c="j" />
     <key c="k" se=";" ne=":" />
     <key c="l" se="'" ne="&quot;" />
     <key c="delete" width="0.5"/>
