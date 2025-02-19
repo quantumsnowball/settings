@@ -3,7 +3,7 @@
   <row>
     <key c="tab" sw="`" nw="~" width="0.9" />
     <key c="q" n="1" nw="!" />
-    <key c="w" n="2" nw="@" />
+    <key c="w" n="2" nw="@" s="enter" />
     <key c="e" n="3" nw="#" />
     <key c="r" n="4" nw="$" se="redo" />
     <key c="t" n="5" nw="%" />
@@ -22,16 +22,16 @@
     <key c="y" n="6" ne="^" sw="copy" />
     <key c="u" n="7" ne="&amp;" sw="undo" />
     <key c="i" n="8" ne="*" />
-    <key c="o" n="9" ne="(" />
+    <key c="o" n="9" ne="(" s="enter" />
     <key c="p" n="0" ne=")" sw="pasteAsPlainText" />
     <key c="-" s="_" n="+" w="=" e="|"  width="1.1" />
   </row>
   <row>
     <key c="esc" width="1.0" />
-    <key c="a" se="selectAll" />
+    <key c="a" e="tab" se="selectAll" />
     <key c="s" />
     <key c="d" />
-    <key c="f" />
+    <key c="f" w="backspace" />
     <key c="g" />
     <key c="ctrl" 
       w="alt"
@@ -44,10 +44,10 @@
       width="2.5" 
     />
     <key c="h" />
-    <key c="j" />
+    <key c="j" e="tab" />
     <key c="k" />
     <key c="l" />
-    <key c=";" sw=":" se="'" ne="&quot;" />
+    <key c=";" sw=":" se="'" ne="&quot;" w="backspace" />
     <key c="\\" sw="[" se="]" nw="{" ne="}" width="1.0" />
   </row>
   <row>
