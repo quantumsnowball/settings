@@ -5,8 +5,8 @@
     <key c="2" se="@"/>
     <key c="3" se="#" s="enter"/>
     <key c="4" se="$"/>
-    <key c="5" se="%"/>
-    <key c="6" sw="^"/>
+    <key c="5" se="%" s="switch_forward"/>
+    <key c="6" sw="^" s="config"/>
     <key c="7" sw="&amp;"/>
     <key c="8" sw="*" s="enter"/>
     <key c="9" sw="(" se="-" ne="_"/>
@@ -50,14 +50,15 @@
   </row>
   <row height="0.95">
     <key c="fn" 
-      n="config"
-      s="switch_forward"
-      width="1.1" 
+      width="0.7" 
     />
     <key c="ctrl" 
       w="alt"
       e="tab"
-      width="1.7" 
+      width="1.1" 
+    />
+    <key c="," 
+      width="1.0"
     />
     <key c="space" 
       n="up"
