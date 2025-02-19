@@ -2,18 +2,18 @@
 <keyboard name="A80-TightNum-Center" script="latin" bottom_row="false">
   <row>
     <key c="1" se="!" sw="`" nw="~" />
-    <key c="2" se="@"/>
+    <key c="2" se="@" s="enter"/>
     <key c="3" se="#" s="enter"/>
-    <key c="4" se="$"/>
-    <key c="5" se="%" s="switch_forward"/>
-    <key c="6" sw="^" s="config"/>
-    <key c="7" sw="&amp;"/>
+    <key c="4" se="$" s="enter"/>
+    <key c="5" se="%" s="switch_forward" n="menu"/>
+    <key c="6" sw="^" s="config" n="fn"/>
+    <key c="7" sw="&amp;" s="enter"/>
     <key c="8" sw="*" s="enter"/>
-    <key c="9" sw="(" se="-" ne="_"/>
+    <key c="9" sw="(" se="-" ne="_" s="enter"/>
     <key c="0" sw=")" se="=" ne="+"/>
   </row>
   <row>
-    <key c="q" />
+    <key c="q" e="tab"/>
     <key c="w" />
     <key c="e" />
     <key c="r" s="redo" />
@@ -22,7 +22,7 @@
     <key c="u" s="undo" />
     <key c="i" se="[" ne="{" />
     <key c="o" se="]" ne="}" />
-    <key c="p" se="\\" ne="|" s="pasteAsPlainText" />
+    <key c="p" se="\\" ne="|" s="pasteAsPlainText" w="backspace" />
   </row>
   <row>
     <key c="a" s="selectAll" e="tab" shift="0.5" />
@@ -44,17 +44,21 @@
     <key c="b" se="," ne="&lt;" />
     <key c="n" se="." ne="&gt;" />
     <key c="m" se="/" ne="\?" />
-    <key c="backspace" n="shift" s="delete" width="1.5" />
+    <key c="backspace" n="shift" s="delete" w="backspace" width="1.5" />
   </row>
   <row height="0.95">
-    <key c="fn" 
-      width="1.1" 
-    />
     <key c="ctrl" 
-      w="alt"
+      s="alt"
       e="tab"
-      n="enter"
+      n="shift"
       width="1.7" 
+    />
+    <key c="," 
+      n="page_up"
+      s="page_down"
+      e="end"
+      w="home"
+      width="1.1" 
     />
     <key c="space" 
       n="up"
@@ -71,7 +75,10 @@
       width="1.1" 
     />
     <key c="enter" 
-      n="ctrl"
+      w="backspace"
+      s="delete"
+      n="shift"
+      s="ctrl"
       width="1.7" 
     />
   </row>
