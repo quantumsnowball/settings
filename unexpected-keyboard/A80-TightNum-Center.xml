@@ -32,7 +32,7 @@
     <key c="s" />
     <key c="d" />
     <key c="f" w="backspace"/>
-    <key c="g" />
+    <key c="g" e="-" w="-" n="|" s="_" ne="/" sw="/" nw="\\" se="\\"/>
     <key c="h" e="tab" />
     <key c="j" />
     <key c="k" se=";" ne=":" />
