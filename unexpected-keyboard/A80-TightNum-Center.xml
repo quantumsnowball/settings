@@ -48,7 +48,7 @@
     <key c="b" se="," ne="&lt;" />
     <key c="n" se="." ne="&gt;" />
     <key c="m" se="/" ne="\?" />
-    <key c="esc" n="shift" s="delete" w="backspace" width="1.5" />
+    <key c="backspace" n="shift" s="delete" w="backspace" width="1.5" />
   </row>
   <row height="0.95">
     <!-- row 5 -->
