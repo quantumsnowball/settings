@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ln -sf "$HOME/.config/settings/less/.lesskey" "$HOME/.lesskey"
+ls -l "$HOME/.lesskey"
+
