@@ -1,3 +1,7 @@
+gui:
+  theme:
+    selectedLineBgColor:
+      - '#004400'
 quitOnTopLevelReturn: true
 git:
   merging:
