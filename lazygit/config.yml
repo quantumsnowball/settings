@@ -9,7 +9,8 @@ git:
     showGraph: 'always'
     showWholeGraph: true
   branchLogCmd: 'git log --graph --all --color=always --abbrev-commit --decorate --date=relative --pretty=oneline {{branchName}} --'
-  allBranchesLogCmd: 'git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty=oneline'
+  allBranchesLogCmds:
+    - git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty=oneline
 customCommands:
   - key: 'F'
     description: 'fast-forward selected branch up to current branch'
