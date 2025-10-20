@@ -337,7 +337,7 @@ FixedAlignment=1
 TextColor=80FF80
 [Layer10]
 Name=
-Text=GPU2
+Text=iGPU
 PositionX=-46
 PositionY=0
 ExtentX=-10
