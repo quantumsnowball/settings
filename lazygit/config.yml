@@ -6,9 +6,9 @@ quitOnTopLevelReturn: true
 git:
   merging:
     args: "--no-ff"
-  paging:
-    colorArg: always
-    pager: diff-so-fancy
+  pagers:
+    - pager: diff-so-fancy
+      colorArg: always
   log:
     showGraph: 'always'
     showWholeGraph: true
